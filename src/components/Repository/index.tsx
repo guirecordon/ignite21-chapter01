@@ -1,6 +1,13 @@
+import React from 'react';
 import './styles.scss';
 
-export function Repository({ name, html_url, description }) {
+interface RepositoryProps {
+  name: string
+  description: string
+  html_url: string
+}
+
+export function Repository({ name, html_url, description }: RepositoryProps) {
   return (
     <section>
       <h2>{name}</h2>
