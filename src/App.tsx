@@ -1,10 +1,17 @@
+import React from 'react';
 import { useEffect, useState } from 'react';
 import '../src/styles/global.scss';
 import { Header } from './components/Header';
 import { Repository } from './components/Repository';
 
-function App() {
-  const [repositories, setRepositories] = useState([]);
+type repositoriesProps = {
+  name: string
+  description: string
+  html_url: string
+}
+
+export function App() {
+  const [repositories, setRepositories] = useState<repositoriesProps[]>([]);
 
   useEffect(() => {
     fetch('https://api.github.com/users/guirecordon/repos')
@@ -24,4 +31,3 @@ function App() {
   );
 }
 
-export default App;
