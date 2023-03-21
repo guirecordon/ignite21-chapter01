@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Rocketseat Ignite Frontend Specialization Program
 
 This project is simply a lesson review of chapter I of Ignite (track 21)--which is an advanced Javascript course provided by a coding school named Rocketseat.
 
